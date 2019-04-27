@@ -50,6 +50,9 @@ PRODUCT_COPY_FILES += \
     vendor/doogee/mix/lib/libalsautils.so:system/lib/libalsautils.so \
     vendor/doogee/mix/lib/libmediatek_exceptionlog.so:system/lib/libmediatek_exceptionlog.so \
     vendor/doogee/mix/lib/libril.so:system/lib/libril.so \
+    vendor/doogee/mix/lib/hw/gatekeeper.trustkernel.so:system/lib/hw/gatekeeper.trustkernel.so \
+    vendor/doogee/mix/lib/hw/keystore.v1.trustkernel.so:system/lib/hw/keystore.v1.trustkernel.so \
+    vendor/doogee/mix/lib/hw/keystore.trustkernel.so:system/lib/hw/keystore.trustkernel.so \
     vendor/doogee/mix/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/doogee/mix/lib/libext2_e2p.so:system/lib/libext2_e2p.so \
     vendor/doogee/mix/lib/libext2fs.so:system/lib/libext2fs.so \
@@ -946,7 +949,6 @@ PRODUCT_COPY_FILES += \
     vendor/doogee/mix/vendor/firmware/pcm_deepidle_lpddr4.bin:system/vendor/firmware/pcm_deepidle_lpddr4.bin \
     vendor/doogee/mix/vendor/firmware/pcm_suspend_lpddr4_by_mp1.bin:system/vendor/firmware/pcm_suspend_lpddr4_by_mp1.bin \
     vendor/doogee/mix/vendor/firmware/catcher_filter_1_ulwctg_n.bin:system/vendor/firmware/catcher_filter_1_ulwctg_n.bin \
-    vendor/doogee/mix/etc/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml \
     vendor/doogee/mix/etc/init/mediadrmserver.rc:system/etc/init/mediadrmserver.rc \
     vendor/doogee/mix/etc/init/racoon.rc:system/etc/init/racoon.rc \
     vendor/doogee/mix/etc/init/uncrypt.rc:system/etc/init/uncrypt.rc \
@@ -979,17 +981,13 @@ PRODUCT_COPY_FILES += \
     vendor/doogee/mix/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/doogee/mix/etc/media_codecs.xml:system/etc/media_codecs.xml \
     vendor/doogee/mix/etc/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
-    vendor/doogee/mix/etc/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     vendor/doogee/mix/etc/media_codecs_mediatek_video.xml:system/etc/media_codecs_mediatek_video.xml \
     vendor/doogee/mix/etc/permissions/platform.xml:system/etc/permissions/platform.xml \
-    vendor/doogee/mix/etc/permissions/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
-    vendor/doogee/mix/etc/permissions/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
     vendor/doogee/mix/etc/permissions/android.hardware.opengles.aep.xml:system/etc/permissions/android.hardware.opengles.aep.xml \
     vendor/doogee/mix/etc/permissions/android.software.device_admin.xml:system/etc/permissions/android.software.device_admin.xml \
     vendor/doogee/mix/etc/permissions/android.software.managed_users.xml:system/etc/permissions/android.software.managed_users.xml \
     vendor/doogee/mix/etc/permissions/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     vendor/doogee/mix/etc/permissions/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
-    vendor/doogee/mix/etc/permissions/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     vendor/doogee/mix/etc/permissions/android.hardware.microphone.xml:system/etc/permissions/android.hardware.microphone.xml \
     vendor/doogee/mix/etc/permissions/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
     vendor/doogee/mix/etc/a2dp_audio_policy_configuration.xml:system/etc/a2dp_audio_policy_configuration.xml \
@@ -1007,4 +1005,3 @@ PRODUCT_COPY_FILES += \
     vendor/doogee/mix/bin/wpa_supplicant:system/bin/wpa_supplicant \
     vendor/doogee/mix/bin/wpa_cli:system/bin/wpa_cli \
     vendor/doogee/mix/bin/vold:system/bin/vold
-
